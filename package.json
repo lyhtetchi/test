@@ -1,0 +1,17 @@
+{
+  "name": "copyprompts-ai",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/web",
+    "functions"
+  ],
+  "scripts": {
+    "dev": "npm --workspace apps/web run dev",
+    "build": "npm --workspace apps/web run build",
+    "lint": "npm --workspace apps/web run lint",
+    "seed": "npm --workspace apps/web run seed",
+    "emulators": "firebase emulators:start --import=./.firebase-data --export-on-exit",
+    "functions:build": "npm --workspace functions run build"
+  }
+}
